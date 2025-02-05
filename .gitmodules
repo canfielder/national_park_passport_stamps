@@ -1,0 +1,3 @@
+[submodule "src/national_parks/common-utils"]
+	path = src/national_parks/common-utils
+	url = git@github.com:canfielder/common-utils.git

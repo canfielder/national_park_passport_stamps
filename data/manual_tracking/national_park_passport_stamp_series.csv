@@ -1,0 +1,364 @@
+name,year,latitude,longitude,region,visited
+Colonial National Historical Park,1986,37.2291337,-76.5039033,Mid-Atlantic,No
+Hopewell Furnace National Historic Site,1987,40.2097267,-75.7691263,Mid-Atlantic,No
+Gettysburg National Military Park,1988,39.8106438,-77.2271061,Mid-Atlantic,Yes
+Assateague Island National Seashore,1989,38.0607973,-75.2362382,Mid-Atlantic,No
+Appomattox Court House National Historical Park,1990,37.3775201,-78.7960069,Mid-Atlantic,Yes
+Valley Forge National Historical Park,1991,40.1017506,-75.446922,Mid-Atlantic,No
+Thomas Edison National Historical Park,1992,40.7839978,-74.2340291,Mid-Atlantic,No
+Fort McHenry National Monument and Historic Shrine,1993,39.2632813,-76.5799192,Mid-Atlantic,No
+Allegheny Portage Railroad National Historic Site,1994,40.457305,-78.5492567,Mid-Atlantic,No
+Delaware Water Gap National Recreation Area,1995,41.1043946,-74.9442586,Mid-Atlantic,Yes
+Shenandoah National Park,1996,38.2927558,-78.6795836,Mid-Atlantic,Yes
+New River Gorge National River,1997,37.8696793,-81.0458005,Mid-Atlantic,Yes
+Upper Delaware Scenic and Recreational River,1998,41.6264712,-75.0501317,Mid-Atlantic,No
+Harpers Ferry National Historical Park,1999,39.3228225,-77.7292072,Mid-Atlantic,No
+Manassas National Battlefield Park,2000,38.8134115,-77.5221678,Mid-Atlantic,No
+Petersburg National Battlefield,2001,37.2438545,-77.3568983,Mid-Atlantic,No
+Fredericksburg & Spotsylvania National Military Park,2002,38.2938385,-77.4673998,Mid-Atlantic,No
+Morristown National Historical Park,2003,40.7648452,-74.5316807,Mid-Atlantic,No
+Fort Necessity National Battlefield,2004,39.8152283,-79.5887828,Mid-Atlantic,No
+Antietam National Battlefield Visitor Center,2005,39.4742098,-77.7445255,Mid-Atlantic,No
+Booker T. Washington National Monument,2006,37.1195544,-79.7316768,Mid-Atlantic,Yes
+Catoctin Mountain Park,2007,39.633851,-77.448212,Mid-Atlantic,No
+Chesapeake & Ohio Canal National Historical Park,2008,39.6010157,-77.8274483,Mid-Atlantic,No
+Fort Harrison,2009,37.427414,-77.3728858,Mid-Atlantic,No
+George Washington Birthplace National Monument,2010,38.1860057,-76.9174414,Mid-Atlantic,No
+Prince William Forest Park,2011,38.5910053,-77.3828498,Mid-Atlantic,No
+Clara Barton National Historic Site,2012,38.9672478,-77.140781,Mid-Atlantic,No
+Paterson Great Falls National Historical Park,2013,40.9172641,-74.1811892,Mid-Atlantic,No
+Johnstown Flood National Memorial,2014,40.3497647,-78.7711604,Mid-Atlantic,No
+Monocacy National Battlefield,2015,39.3725838,-77.398982,Mid-Atlantic,No
+Wolf Trap National Park for the Performing Arts,2016,38.9378645,-77.2653551,Mid-Atlantic,No
+Eisenhower National Historic Site,2017,39.7939108,-77.2633159,Mid-Atlantic,No
+Steamtown National Historic Site,2018,41.4079058,-75.6720114,Mid-Atlantic,No
+Fort Monroe National Monument,2019,37.0040553,-76.3073197,Mid-Atlantic,No
+Maggie L Walker National Historic,2020,37.5477645,-77.4377338,Mid-Atlantic,No
+Flight 93 National Memorial,2021,40.0628447,-78.8925706,Mid-Atlantic,No
+Thaddeus Kosciuszko National Memorial,2022,39.9434531,-75.1473204,Mid-Atlantic,No
+First State National Historical Park,2023,39.659815,-75.563597,Mid-Atlantic,No
+Harriet Tubman Underground Railroad National Historical Park,2024,38.4500541,-76.1375972,Mid-Atlantic,No
+Friendship Hill National Historic Site,2025,39.7755737,-79.9314919,Mid-Atlantic,No
+Gateway Arch Museum,1986,38.6246855,-90.1854426,Midwest,No
+Lincoln Home National Historic Site,1987,39.7973533,-89.6449254,Midwest,No
+Pictured Rocks National Lakeshore,1988,46.5614384,-86.3213064,Midwest,No
+Apostle Islands National Lakeshore,1989,46.9302046,-90.6333321,Midwest,No
+Sleeping Bear Dunes National Lakeshore,1990,44.8757238,-85.9996747,Midwest,Yes
+Indiana Dunes National Lakeshore,1991,41.6501162,-87.0546556,Midwest,No
+Fort Scott National Historic Site,1992,37.8436307,-94.704733,Midwest,No
+St. Croix National Riverway,1993,45.4162087,-92.6467858,Midwest,No
+Harry S. Truman National Historic Site,1994,39.093754,-94.4233898,Midwest,No
+Agate Fossil Beds National Monument,1995,42.4252103,-103.7342402,Midwest,No
+Effigy Mounds National Monument,1996,43.089214,-91.2006419,Midwest,No
+Scotts Bluff National Monument,1997,41.8358432,-103.7080622,Midwest,No
+Hopewell Culture National Historical Park,1998,39.3761064,-83.0065097,Midwest,No
+Herbert Hoover National Historic Site,1999,41.6689744,-91.3477571,Midwest,No
+Cuyahoga Valley National Park,2000,41.2808248,-81.567812,Midwest,No
+Isle Royale National Park,2001,47.9958654,-88.9092899,Midwest,No
+Grand Portage National Monument,2002,47.9607126,-89.6865861,Midwest,No
+Voyageurs National Park,2003,48.4840955,-92.8270873,Midwest,No
+Fort Larned National Historic Site,2004,38.1828653,-99.2181425,Midwest,No
+Wilson's Creek National Battlefield,2005,37.1157835,-93.4190375,Midwest,No
+Tallgrass Prairie National Preserve,2006,38.4426255,-96.5730004,Midwest,No
+Homestead National Monument of America,2007,40.2913841,-96.8357934,Midwest,No
+Ozark National Scenic Riverways,2008,36.9209284,-90.8984897,Midwest,No
+Lincoln Boyhood National Memorial,2009,38.1129788,-86.9958632,Midwest,No
+Perry's Victory & International Peace Memorial,2010,41.654111,-82.811331,Midwest,No
+Niobrara National Scenic River Visitor Center,2011,42.868171,-100.5531366,Midwest,No
+Pipestone National Monument,2012,44.0136491,-96.3247472,Midwest,No
+River Raisin National Battlefield Park Visitor Center,2013,41.9112005,-83.3767265,Midwest,No
+Dayton Aviation Heritage National Historical Park,2014,39.7559858,-84.2116472,Midwest,No
+Missouri National Recreational River Headquarter & Visitor Center,2015,42.8690505,-97.3846394,Midwest,No
+George Rogers Clark National Historical Park,2016,38.6791974,-87.5355674,Midwest,No
+George Washington Carver National Monument,2017,36.9873287,-94.3556725,Midwest,No
+James A. Garfield National Historic Site,2018,41.6639783,-81.350977,Midwest,No
+William Howard Taft National Historic Site,2019,39.1198118,-84.5082153,Midwest,No
+First Ladies' National Historic Site,2020,40.7965636,-81.37573,Midwest,No
+Nicodemus National Historic Site,2021,39.3932342,-99.6147017,Midwest,No
+Pullman National Historical Park,2022,41.6936923,-87.607479,Midwest,No
+Charles Young Buffalo Soldiers National Monument,2023,39.7072565,-83.8902619,Midwest,No
+Ulysses S. Grant National Historic Site,2024,38.5517899,-90.3516913,Midwest,No
+Brown v. Board of Education National Historical Park,2025,39.0379673,-95.6763955,Midwest,No
+Statue of Liberty National Monument,1986,40.6892494,-74.0445004,National,Yes
+Independence National Historical Park,1987,39.9495312,-75.1497319,National,No
+Canyon de Chelly National Monument ,1988,36.1336111,-109.4694444,National,No
+Cape Hatteras National Seashore ,1988,35.6653779,-75.4869033,National,No
+Glacier National Park ,1988,48.7596128,-113.7870225,National,No
+Lincoln Memorial ,1988,38.8892686,-77.050176,National,No
+Yellowstone National Park ,1988,44.427963,-110.588455,National,No
+Yellowstone National Park,1989,44.427963,-110.588455,National,No
+Sequoia National Park,1990,36.4863668,-118.5657516,National,No
+Muir Woods National Monument,1991,37.8970199,-122.5811177,National,No
+San Juan National Historic Site,1992,18.4686841,-66.1207495,National,No
+Grand Teton National Park,1993,43.7904282,-110.6817627,National,No
+Golden Spike National Historic Site,1994,41.6174219,-112.5509325,National,Yes
+Glacier National Park,1995,48.7596128,-113.7870225,National,No
+Mesa Verde National Park,1996,37.2308729,-108.4618335,National,No
+Everglades National Park,1997,25.2866155,-80.8986509,National,Yes
+Women's Rights National Historical Park,1998,42.910773,-76.800178,National,No
+Mount Rainier National Park,1999,46.8799663,-121.7269094,National,No
+Minute Man National Historical Park,2000,42.4579978,-71.3215205,National,Yes
+Independence National Historical Park,2001,39.9495312,-75.1497319,National,No
+Glen Canyon National Recreation Area,2002,37.3869892,-110.8428225,National,No
+Saguaro National Park,2003,32.2967359,-111.166615,National,Yes
+Navajo National Monument,2004,36.681999,-110.5328509,National,No
+George Washington Memorial Parkway,2005,38.8435735,-77.0490823,National,No
+Petrified Forest National Park,2006,34.9099897,-109.8067916,National,No
+Kalaupapa National Historical Park,2007,21.1924062,-156.9665093,National,No
+Pinnacles National Park,2008,36.4905655,-121.1824925,National,No
+Abraham Lincoln Birthplace National Historical Park,2009,37.5320335,-85.733899,National,No
+Dinosaur National Monument,2010,40.4927109,-108.9416357,National,No
+Fort Sumter National Monument,2011,32.7523476,-79.8746925,National,No
+Shiloh National Military Park,2012,35.142937,-88.3408499,National,No
+"Martin Luther King, Jr. Memorial",2013,38.8862302,-77.0442344,National,No
+Fort McHenry National Monument and Historic Shrine,2014,39.2632813,-76.5799192,National,No
+Appomattox Court House National Historical Park,2015,37.3775201,-78.7960069,National,Yes
+Denali National Park and Preserve,2017,63.1148002,-151.1926057,National,No
+Appalachian National Scenic Trail,2018,39.3254507,-77.740591,National,Yes
+Grand Canyon National Park,2019,36.1069652,-112.1129972,National,No
+Women's Rights National Historical Park,2020,42.910773,-76.800178,National,No
+Golden Gate National Recreation Area,2021,37.8480359,-122.5295263,National,No
+Lake Mead National Recreation Area,2022,36.1550863,-114.4559303,National,No
+Manhattan Project National Historical Park,2023,35.8808944,-106.3029133,National,No
+Charlestown Navy Yard,2024,42.3733879,-71.0565598,National,Yes
+Mount Rushmore National Memorial,2025,43.8803357,-103.4537746,National,No
+Cape Cod National Seashore,1986,41.9043472,-69.9789243,North Atlantic,Yes
+Acadia National Park,1987,44.3385559,-68.2733346,North Atlantic,Yes
+Salem Maritime National Historic Site,1988,42.5213163,-70.8866429,North Atlantic,No
+Federal Hall,1989,40.7073993,-74.0102088,North Atlantic,No
+Ellis Island,1990,40.6993891,-74.0415845,North Atlantic,Yes
+Lowell National Historic Park,1991,42.6472093,-71.3095624,North Atlantic,No
+Roger Williams National Memorial,1992,41.8313318,-71.4107403,North Atlantic,No
+Boston National Historical Park,1993,42.373162,-71.056834,North Atlantic,Yes
+Martin Van Buren National Historic Site,1994,42.3697825,-73.7041742,North Atlantic,No
+Saint-Gaudens National Historic Site,1995,43.5010949,-72.3687458,North Atlantic,No
+Saugus Iron Works National Historic Site,1996,42.4679503,-71.0081272,North Atlantic,No
+General Grant National Memorial,1997,40.8134045,-73.9630671,North Atlantic,No
+Sagamore Hill National Historic Site,1998,40.8855293,-73.5010296,North Atlantic,No
+Fire Island National Seashore,1999,40.6553691,-73.1034307,North Atlantic,No
+Weir Farm National Historic Site,2000,41.2565181,-73.4564023,North Atlantic,No
+Theodore Roosevelt Inaugural National Historic Site,2001,42.9015559,-78.8726139,North Atlantic,No
+Saratoga National Historical Park,2002,43.0123082,-73.6488883,North Atlantic,No
+Vanderbilt Mansion National Historic Site,2003,41.7963461,-73.9423869,North Atlantic,No
+Frederick Law Olmsted National Historic Site,2004,42.3254659,-71.1320319,North Atlantic,No
+Boston African American National Historic Site,2005,42.3599803,-71.0652188,North Atlantic,Yes
+New Bedford Whaling National Historical Park,2006,41.6356968,-70.9239528,North Atlantic,No
+Springfield Armory National Historic Site,2007,42.1072695,-72.5815738,North Atlantic,No
+Theodore Roosevelt Birthplace,2008,40.7384812,-73.988719,North Atlantic,No
+Gateway National Recreation Area,2009,40.4608251,-73.9929605,North Atlantic,No
+Fort Stanwix National Monument,2010,43.210587,-75.455292,North Atlantic,No
+Adams National Historical Park,2011,42.2521218,-71.0033201,North Atlantic,No
+Hamilton Grange National Memorial,2012,40.8213537,-73.9473103,North Atlantic,Yes
+Washington's Headquarters National Historic Site,2013,42.3769262,-71.1263814,North Atlantic,Yes
+Marsh-Billings-Rockefeller National Historical Park,2014,43.6313285,-72.5179154,North Atlantic,No
+Boston Harbor Islands National Recreation Area,2015,42.3005287,-70.9294163,North Atlantic,Yes
+Acadia National Park,2016,44.3385559,-68.2733346,North Atlantic,Yes
+John Fitzgerald Kennedy National Historic Site,2017,42.346965,-71.123267,North Atlantic,No
+Eleanor Roosevelt National Historic Site,2018,41.7631389,-73.8990976,North Atlantic,No
+Home of Franklin D. Roosevelt National Historic Site,2019,41.7698549,-73.9326457,North Atlantic,No
+Stonewall National Monument,2020,40.7335757,-74.0025279,North Atlantic,Yes
+Castle Clinton National Monument,2021,40.7034401,-74.0168023,North Atlantic,Yes
+Governors Island National Monument,2022,40.6902132,-74.0172006,North Atlantic,No
+Minute Man National Historical Park,2023,42.4543332,-71.3013922,North Atlantic,Yes
+Ellis Island,2024,40.6994352,-74.0415182,North Atlantic,Yes
+African Burial Ground National Monument,2025,40.714538,-74.0044649,North Atlantic,No
+Mount Rainier National Park,1986,46.8799663,-121.7269094,Pacific Northwest & Alaska,No
+Denali National Park and Preserve,1987,63.1148002,-151.1926057,Pacific Northwest & Alaska,No
+Olympic National Park,1988,47.8021067,-123.6043524,Pacific Northwest & Alaska,Yes
+Crater Lake National Park,1989,42.8684411,-122.1684785,Pacific Northwest & Alaska,No
+Craters of the Moon National Monument & Preserve,1990,43.2058067,-113.5001702,Pacific Northwest & Alaska,No
+Klondike Gold Rush National Historical Park Visitor Center,1991,59.4535152,-135.3185254,Pacific Northwest & Alaska,No
+Fort Clatsop,1992,46.1344766,-123.8803088,Pacific Northwest & Alaska,Yes
+North Cascades National Park,1993,48.7718174,-121.2984648,Pacific Northwest & Alaska,Yes
+Kenai Fjords National Park,1994,60.0437764,-149.8163645,Pacific Northwest & Alaska,No
+Wrangell-St. Elias National Park & Preserve,1995,61.7104448,-142.9856804,Pacific Northwest & Alaska,No
+John Day Fossil Beds National Monument,1996,44.5445527,-119.6319641,Pacific Northwest & Alaska,Yes
+Katmai National Park and Preserve,1997,58.5975286,-154.6937285,Pacific Northwest & Alaska,No
+Sitka National Historical Park,1998,57.0489284,-135.3159066,Pacific Northwest & Alaska,No
+Fort Vancouver National Historic Site,1999,45.6257476,-122.6550957,Pacific Northwest & Alaska,No
+Glacier Bay National Park and Preserve,2000,58.6658073,-136.9002147,Pacific Northwest & Alaska,No
+San Juan Island National Historical Park,2001,48.4662479,-123.0206205,Pacific Northwest & Alaska,No
+Aniakchak National Monument & Preserve,2002,56.903644,-158.0989777,Pacific Northwest & Alaska,No
+City of Rocks National Reserve,2003,42.0774026,-113.7037797,Pacific Northwest & Alaska,No
+Lake Roosevelt National Recreation Area,2004,48.1011309,-118.246639,Pacific Northwest & Alaska,No
+Whitman Mission National Historic Site,2005,46.0413251,-118.4639177,Pacific Northwest & Alaska,No
+Gates of the Arctic National Park and Preserve,2006,67.9146297,-153.4637908,Pacific Northwest & Alaska,No
+Ebey's Landing National Historical Reserve,2007,48.1935601,-122.7113548,Pacific Northwest & Alaska,Yes
+Lake Chelan National Recreation Area,2008,48.352344,-120.6855771,Pacific Northwest & Alaska,No
+Oregon Caves National Monument & Preserve,2009,42.0997495,-123.4100271,Pacific Northwest & Alaska,No
+Lewis and Clark National Historical Park,2010,46.1298421,-123.8903148,Pacific Northwest & Alaska,Yes
+Ross Lake National Recreation Area,2011,48.6998733,-121.0198366,Pacific Northwest & Alaska,Yes
+Noatak National Preserve,2012,67.6448536,-162.1650465,Pacific Northwest & Alaska,No
+Lake Clark National Park and Preserve,2013,60.4126957,-154.3234955,Pacific Northwest & Alaska,No
+Bering Land Bridge National Preserve,2014,65.9258669,-164.4377877,Pacific Northwest & Alaska,No
+Nez Perce National Historical Park Visitor Center,2015,46.4475305,-116.8227368,Pacific Northwest & Alaska,No
+San Juan Island National Historical Park,2016,48.4702991,-123.0279,Pacific Northwest & Alaska,No
+Yukon-Charley Rivers National Preserve,2017,64.9715824,-143.2907579,Pacific Northwest & Alaska,No
+Minidoka National Historic Site,2018,42.6779139,-114.2512011,Pacific Northwest & Alaska,No
+"Hagerman Fossil Beds National Monument, Visitor's Center",2019,42.8179106,-114.8983185,Pacific Northwest & Alaska,No
+Alagnak River,2020,59.0047222,-156.8602779,Pacific Northwest & Alaska,No
+Kobuk Valley National Park,2021,67.3356197,-159.1243162,Pacific Northwest & Alaska,No
+Cape Krusenstern National Monument,2022,67.4180558,-163.5053822,Pacific Northwest & Alaska,No
+Olympic National Park,2023,47.8021067,-123.6043524,Pacific Northwest & Alaska,Yes
+Craters of the Moon National Monument & Preserve,2024,43.1717745,-113.4821281,Pacific Northwest & Alaska,No
+John Day Fossil Beds National Monument,2025,44.6345682,-120.2390749,Pacific Northwest & Alaska,Yes
+Mount Rushmore National Memorial,1986,43.8791025,-103.4590667,Rocky Mountain,No
+Devils Tower National Monument,1987,44.5902098,-104.7146168,Rocky Mountain,No
+Bryce Canyon National Park,1988,37.5930377,-112.1870895,Rocky Mountain,No
+Arches National Park,1989,38.733081,-109.5925139,Rocky Mountain,No
+Rocky Mountain National Park,1990,40.3427932,-105.6836389,Rocky Mountain,No
+Fort Union Trading Post National Historic Site,1991,47.9994421,-104.0405818,Rocky Mountain,No
+Big Hole National Battlefield Visitor Center,1992,45.6413441,-113.6434203,Rocky Mountain,No
+Hovenweep National Monument,1993,37.3837623,-109.0726022,Rocky Mountain,No
+Florissant Fossil Beds National Monument,1994,38.9136173,-105.2854076,Rocky Mountain,No
+Rainbow Bridge National Monument,1995,37.0774203,-110.964382,Rocky Mountain,No
+Little Bighorn Battlefield National Monument,1996,45.5700984,-107.4324314,Rocky Mountain,No
+Zion National Park,1997,37.2982022,-113.0263005,Rocky Mountain,No
+Natural Bridges National Monument,1998,37.604056,-110.0052043,Rocky Mountain,No
+Badlands National Park,1999,43.8553804,-102.3396912,Rocky Mountain,No
+Curecanti National Recreation Area,2000,38.4657461,-107.1666799,Rocky Mountain,No
+Canyonlands National Park,2001,38.3268693,-109.8782592,Rocky Mountain,No
+Great Sand Dunes National Park and Preserve,2002,37.7915959,-105.5943276,Rocky Mountain,No
+Wind Cave National Park,2003,43.6045811,-103.4213433,Rocky Mountain,No
+Colorado National Monument,2004,39.0575219,-108.6938999,Rocky Mountain,No
+Bent's Old Fort National Historic Site,2005,38.0404402,-103.4295308,Rocky Mountain,No
+Grant-Kohrs Ranch National Historic Site,2006,46.406069,-112.736682,Rocky Mountain,No
+Cedar Breaks National Monument,2007,37.6359544,-112.8450248,Rocky Mountain,No
+Jewel Cave National Monument,2008,43.7303594,-103.8290512,Rocky Mountain,No
+Fort Laramie Visitor Center,2009,42.2036873,-104.5560183,Rocky Mountain,No
+Capitol Reef National Park,2010,38.3669703,-111.2615042,Rocky Mountain,Yes
+Theodore Roosevelt National Park,2011,46.978965,-103.5387091,Rocky Mountain,No
+Black Canyon of the Gunnison National Park,2012,38.5753936,-107.7415961,Rocky Mountain,No
+"John D. Rockefeller, Jr. Memorial Parkway",2013,44.0825753,-110.6812426,Rocky Mountain,No
+Bighorn Canyon National Recreation Area,2014,45.3109005,-107.9359118,Rocky Mountain,No
+Fossil Butte National Monument,2015,41.8581804,-110.7658867,Rocky Mountain,No
+Fort Union Trading Post National Historic Site,2016,47.9994421,-104.0405818,Rocky Mountain,No
+Sand Creek Massacre National Historic Site,2017,38.5447972,-102.5038001,Rocky Mountain,No
+Minuteman Missile Visitors Center,2018,43.844547,-101.9011854,Rocky Mountain,No
+Yucca House National Monument,2019,37.2517993,-108.6865205,Rocky Mountain,No
+Knife River Indian Villages National Historic Site,2020,47.3314188,-101.3856559,Rocky Mountain,No
+Timpanogos Cave National Monument,2021,40.4405556,-111.7094444,Rocky Mountain,No
+Yellowstone National Park,2022,44.427963,-110.588455,Rocky Mountain,No
+Bryce Canyon National Park,2023,37.5930377,-112.1870895,Rocky Mountain,No
+Grand Teton National Park,2024,43.7904282,-110.6817627,Rocky Mountain,No
+Golden Spike National Historical Park,2025,41.6171911,-112.5507226,Rocky Mountain,No
+Blue Ridge Parkway Visitor Center,1986,35.5658059,-82.4863211,Southeast,Yes
+Vicksburg National Military Park,1987,32.3548532,-90.8452588,Southeast,No
+Natchez Trace Parkway,1988,34.3299657,-88.7096174,Southeast,No
+Great Smoky Mountains,1989,35.6531943,-83.5070203,Southeast,Yes
+Chickamauga & Chattanooga National Military Park,1990,34.9185131,-85.2513705,Southeast,No
+Mammoth Cave National Park,1991,37.1869978,-86.100528,Southeast,No
+Castillo de San Marcos,1992,29.8978618,-81.3115187,Southeast,No
+Wright Brothers National Memorial,1993,36.0143027,-75.667856,Southeast,No
+Carl Sandburg Home,1994,35.2714404,-82.4471894,Southeast,Yes
+Andersonville National Historic Site,1995,32.2002948,-84.1303207,Southeast,No
+Gulf Islands National Seashore,1996,30.3918514,-88.791067,Southeast,No
+Dry Tortugas National Park,1997,24.628477,-82.8731874,Southeast,No
+Fort Sumter National Monument,1998,32.7523476,-79.8746925,Southeast,No
+Cumberland Island National Seashore,1999,30.7206514,-81.5502114,Southeast,No
+Canaveral National Seashore,2000,28.789536,-80.7563754,Southeast,No
+Moores Creek National Battlefield,2001,34.4577897,-78.109585,Southeast,Yes
+Stones River National Battlefield,2002,35.8731131,-86.43469,Southeast,No
+Fort Donelson National Battlefield,2003,36.4953082,-87.8569525,Southeast,No
+Big South Fork National River and Recreation Area,2004,36.4709004,-84.6513846,Southeast,No
+Cumberland Gap National Historical Park,2005,36.6274309,-83.6215173,Southeast,No
+Obed National Wild & Scenic River,2006,36.1061527,-84.5984527,Southeast,No
+Fort Pulaski National Monument,2007,32.02706,-80.8904868,Southeast,No
+Andrew Johnson National Historic Site,2008,36.1629374,-82.8295391,Southeast,Yes
+Congaree National Park,2009,33.791374,-80.7693275,Southeast,Yes
+Fort Matanzas National Monument,2010,29.7151961,-81.2392182,Southeast,No
+Fort Frederica National Monument,2011,31.223111,-81.389279,Southeast,No
+Natchez National Historical Park,2012,31.559982,-91.405937,Southeast,No
+DeSoto National Memorial,2013,27.5216976,-82.6434516,Southeast,No
+Horseshoe Bend National Military Park,2014,32.9783223,-85.7310076,Southeast,No
+Ocmulgee National Monument,2015,32.84254,-83.6038269,Southeast,No
+Abraham Lincoln Birthplace National Historical Park,2016,37.5320335,-85.733899,Southeast,No
+Guilford Courthouse National Military Park,2017,36.1314163,-79.8465338,Southeast,Yes
+Biscayne National Park,2018,25.4824229,-80.2083103,Southeast,No
+Cape Hatteras National Seashore,2019,35.6653779,-75.4869033,Southeast,No
+Jimmy Carter National Historic Site,2020,32.0365209,-84.3926087,Southeast,No
+Virgin Islands Coral Reef National Monument,2021,18.2674276,-64.7043882,Southeast,No
+Cape Lookout,2022,34.6227474,-76.5246207,Southeast,No
+Kennesaw Mountain National Battlefield Park,2023,33.9513354,-84.5963993,Southeast,No
+Tuskegee Airmen National Historic Site,2024,32.4572257,-85.6801071,Southeast,No
+Christiansted National Historic Site,2025,17.7467366,-64.7023078,Southeast,No
+Big Bend National Park,1986,29.1274869,-103.2425379,Southwest,No
+White Sands National Monument,1987,32.7872403,-106.3256816,Southwest,No
+San Antonio Missions National Historical Park,1988,29.361157,-98.478431,Southwest,No
+Hot Springs National Park,1989,34.5216915,-93.0423545,Southwest,Yes
+Pecos National Historical Park,1990,35.5502861,-105.6878211,Southwest,No
+Bandelier National Monument,1991,35.7646658,-106.3228338,Southwest,No
+Gran Quivira Visitor Center,1992,34.2595807,-106.0932504,Southwest,No
+Arkansas Post National Memorial,1993,34.0210974,-91.3478851,Southwest,No
+Lyndon B. Johnson State Park & Historic Site,1994,30.2373905,-98.6292057,Southwest,No
+Carlsbad Caverns National Park,1995,32.1478553,-104.5567138,Southwest,No
+El Morro National Monument,1996,35.0396358,-108.3450813,Southwest,No
+Guadalupe Mountains National Park,1997,31.94519,-104.8725221,Southwest,No
+Petroglyph National Monument,1998,35.1367817,-106.7405057,Southwest,No
+Jean Lafitte National Historical Park and Preserve,1999,29.8116363,-90.141294,Southwest,No
+Chaco Culture National Historical Park,2000,36.0529998,-107.955924,Southwest,No
+Fort Smith National Historic Site,2001,35.3883026,-94.4297647,Southwest,No
+Buffalo National River,2002,35.979665,-92.7558261,Southwest,No
+Gila Cliff Dwellings National Monument,2003,33.2272903,-108.2722727,Southwest,No
+Fort Union National Monument,2004,35.9074812,-105.0131863,Southwest,No
+Aztec Ruins National Monument,2005,36.8372086,-108.000093,Southwest,No
+Pea Ridge National Military Park,2006,36.4437655,-94.025807,Southwest,No
+Amistad National Recreation Area,2007,29.4955775,-100.9952685,Southwest,No
+Cane River Creole National Historical Park,2008,31.6652693,-93.0033638,Southwest,No
+Padre Island National Seashore,2009,27.4241558,-97.2991836,Southwest,No
+Washita Battlefield National Historic Site,2010,35.6199266,-99.7051547,Southwest,No
+Fort Davis National Historic Site,2011,30.5974177,-103.8917227,Southwest,No
+El Malpais National Monument,2012,34.9002575,-107.9942365,Southwest,No
+Little Rock Central High School National Historic Site Visitor Center,2013,34.7381955,-92.2974166,Southwest,Yes
+Big Thicket National Preserve,2014,30.4721792,-94.3473144,Southwest,No
+Lake Meredith National Recreation Area,2015,35.6438165,-101.5863058,Southwest,No
+Capulin Volcano National Monument,2016,36.7810744,-103.9695127,Southwest,No
+Palo Alto Battlefield National Historical Park,2017,26.0167821,-97.4790262,Southwest,No
+Valles Caldera National Preserve,2018,35.832105,-106.487006,Southwest,No
+New Orleans Jazz National Historical Park,2019,29.9584558,-90.0607896,Southwest,No
+Waco Mammoth National Monument,2020,31.6067336,-97.1758392,Southwest,No
+Park Grounds,2021,31.7671438,-106.4542166,Southwest,No
+Chickasaw National Recreation Area,2022,34.4611597,-97.0066515,Southwest,No
+President William Jefferson Clinton Birthplace Home National Historic Site,2023,33.6675835,-93.5964186,Southwest,No
+Rio Grande Wild And Scenic River,2024,29.6130189,-102.7374667,Southwest,No
+Alibates Flint Quarries National Monument,2025,35.5822153,-101.6734219,Southwest,No
+Yosemite National Park,1986,37.8651011,-119.5383294,Western,No
+Hawaiʻi Volcanoes National Park,1987,19.4193697,-155.2884969,Western,Yes
+Grand Canyon National Park,1988,36.1069652,-112.1129972,Western,No
+Great Basin National Park,1989,38.983333,-114.3,Western,No
+Death Valley National Park,1990,36.5053891,-117.0794078,Western,No
+World War II Valor in the Pacific National Monument,1991,21.3648525,-157.9499523,Western,Yes
+Cabrillo National Monument,1992,32.6735426,-117.2425191,Western,No
+Redwood National and State Parks,1993,41.2131788,-124.0046275,Western,No
+Organ Pipe Cactus National Monument,1994,32.0877596,-112.9058802,Western,No
+Fort Point National Historic Site,1995,37.8106185,-122.4770527,Western,No
+National Park of American Samoa,1996,-14.2583333,-170.6833333,Western,No
+Pu'uhonua O Hōnaunau National Historical Park,1997,19.4215385,-155.9105253,Western,No
+Point Reyes National Seashore,1998,38.0722847,-122.8817367,Western,No
+Joshua Tree National Park,1999,33.873415,-115.9009923,Western,Yes
+Channel Islands National Park,2000,33.9960737,-119.7691632,Western,No
+Montezuma Castle National Monument,2001,34.6115755,-111.8349854,Western,No
+Coronado National Memorial,2002,31.3458652,-110.2537755,Western,No
+Manzanar,2003,36.7272288,-118.1527894,Western,No
+Chiricahua National Monument,2004,32.0135714,-109.3422953,Western,No
+Lassen Volcanic National Park,2005,40.49766,-121.4206552,Western,No
+Tonto National Monument,2006,33.6452781,-111.1126846,Western,No
+Mojave National Preserve,2007,35.155183,-115.4483414,Western,No
+Tumacácori National Historical Park,2008,31.5678197,-111.0510277,Western,No
+Haleakalā National Park,2009,20.7203826,-156.1551524,Western,Yes
+Kings Canyon National Park,2010,36.8878548,-118.5551477,Western,No
+Devils Postpile National Monument,2011,37.6251062,-119.0849506,Western,No
+Fort Bowie National Historic Site,2012,32.156556,-109.452661,Western,No
+Sunset Crater,2013,35.3641752,-111.5040458,Western,No
+César E. Chávez National Monument,2014,35.2234505,-118.5590097,Western,No
+Walnut Canyon National Monument,2015,35.207746,-111.517204,Western,No
+Hawaiʻi Volcanoes National Park,2016,19.4193697,-155.2884969,Western,Yes
+Casa Grande Ruins National Monument,2017,32.9954589,-111.5355282,Western,No
+Hubbell Trading Post National Historic Site,2018,35.709401,-109.5584646,Western,No
+San Francisco Maritime National Historical Park,2019,37.807743,-122.42415,Western,No
+Rosie the Riveter National Historical Park,2020,37.9097083,-122.3572222,Western,No
+Pu'ukohola Heiau National Historic Site,2021,20.025629,-155.8217773,Western,No
+Great Basin National Park,2022,38.9299798,-114.2633787,Western,No
+Pipe Spring National Monument,2023,36.8625334,-112.7374633,Western,No
+Wupatki National Monument,2024,35.5599835,-111.3935271,Western,No
+John Muir National Historic Site,2025,37.9921664,-122.1310682,Western,No
