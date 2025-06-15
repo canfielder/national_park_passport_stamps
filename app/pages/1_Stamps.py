@@ -8,8 +8,7 @@ import os
 import pandas as pd
 import pathlib as pl
 import streamlit as st
-
-from streamlit_folium import st_folium
+import streamlit_folium as stf
 
 # PROJECT_ROOT = find_project_root()
 PROJECT_ROOT = "/Users/evancanfield/Documents/Projects/national_park_passport_stamps"
@@ -66,14 +65,22 @@ tab1, tab2 = st.tabs(["Map View", "Table View"])
 
 with tab1:
     st.header("National Park Passport Stamp Locations")
-    
-    # Create map
-    m = folium.Map(
-        location=[
+
+    # Fallback location (continental US center)
+    default_location = [39.8283, -98.5795]
+
+    if df_filtered.empty:
+        st.info("No stamps match your current filters. Showing base map only.")
+        map_center = default_location
+    else:
+        # Safe calculation of mean coordinates
+        map_center = [
             df_filtered["latitude"].mean(), 
             df_filtered["longitude"].mean()
-            ], zoom_start=5
-            )
+        ]
+    
+    # Create map
+    m = folium.Map(location=map_center, zoom_start=5)
     
     for _, row in df_filtered.iterrows():
         color = region_colors.get(row["region"], "blue")
@@ -98,7 +105,7 @@ with tab1:
         ).add_to(m)
     
     plugins.Fullscreen(position="topleft").add_to(m)
-    st_folium(
+    stf.st_folium(
         m,
         height = 750,
         width = 1000,

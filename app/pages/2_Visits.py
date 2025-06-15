@@ -78,13 +78,21 @@ df_filtered = df[
 
 st.header("National Park Visiting Records")
 
-# Create map
-m = folium.Map(
-    location=[
+# Fallback location (continental US center)
+default_location = [39.8283, -98.5795]
+
+if df_filtered.empty:
+    st.info("No stamps match your current filters. Showing base map only.")
+    map_center = default_location
+else:
+    # Safe calculation of mean coordinates
+    map_center = [
         df_filtered["latitude"].mean(), 
         df_filtered["longitude"].mean()
-        ], zoom_start=5
-        )
+    ]
+
+# Create map
+m = folium.Map(location=map_center, zoom_start=5)
 
 for _, row in df_filtered.iterrows():
     color = visit_colors.get(row["status"], "blue")

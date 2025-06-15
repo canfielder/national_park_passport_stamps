@@ -14,7 +14,7 @@ New River Gorge National River,1997,37.8696793,-81.0458005,Mid-Atlantic,Yes
 Upper Delaware Scenic and Recreational River,1998,41.6264712,-75.0501317,Mid-Atlantic,No
 Harpers Ferry National Historical Park,1999,39.3228225,-77.7292072,Mid-Atlantic,No
 Manassas National Battlefield Park,2000,38.8134115,-77.5221678,Mid-Atlantic,No
-Petersburg National Battlefield,2001,37.2438545,-77.3568983,Mid-Atlantic,No
+Petersburg National Battlefield,2001,37.2438545,-77.3568983,Mid-Atlantic,Yes
 Fredericksburg & Spotsylvania National Military Park,2002,38.2938385,-77.4673998,Mid-Atlantic,No
 Morristown National Historical Park,2003,40.7648452,-74.5316807,Mid-Atlantic,No
 Fort Necessity National Battlefield,2004,39.8152283,-79.5887828,Mid-Atlantic,No
@@ -22,7 +22,7 @@ Antietam National Battlefield Visitor Center,2005,39.4742098,-77.7445255,Mid-Atl
 Booker T. Washington National Monument,2006,37.1195544,-79.7316768,Mid-Atlantic,Yes
 Catoctin Mountain Park,2007,39.633851,-77.448212,Mid-Atlantic,No
 Chesapeake & Ohio Canal National Historical Park,2008,39.6010157,-77.8274483,Mid-Atlantic,No
-Fort Harrison,2009,37.427414,-77.3728858,Mid-Atlantic,No
+Richmond National Battlefield Park,2009,37.427414,-77.3728858,Mid-Atlantic,Yes
 George Washington Birthplace National Monument,2010,38.1860057,-76.9174414,Mid-Atlantic,No
 Prince William Forest Park,2011,38.5910053,-77.3828498,Mid-Atlantic,No
 Clara Barton National Historic Site,2012,38.9672478,-77.140781,Mid-Atlantic,No
@@ -33,7 +33,7 @@ Wolf Trap National Park for the Performing Arts,2016,38.9378645,-77.2653551,Mid-
 Eisenhower National Historic Site,2017,39.7939108,-77.2633159,Mid-Atlantic,No
 Steamtown National Historic Site,2018,41.4079058,-75.6720114,Mid-Atlantic,No
 Fort Monroe National Monument,2019,37.0040553,-76.3073197,Mid-Atlantic,No
-Maggie L Walker National Historic,2020,37.5477645,-77.4377338,Mid-Atlantic,No
+Maggie L Walker National Historic,2020,37.5477645,-77.4377338,Mid-Atlantic,Yes
 Flight 93 National Memorial,2021,40.0628447,-78.8925706,Mid-Atlantic,No
 Thaddeus Kosciuszko National Memorial,2022,39.9434531,-75.1473204,Mid-Atlantic,No
 First State National Historical Park,2023,39.659815,-75.563597,Mid-Atlantic,No
@@ -117,7 +117,7 @@ Denali National Park and Preserve,2017,63.1148002,-151.1926057,National,No
 Appalachian National Scenic Trail,2018,39.3254507,-77.740591,National,Yes
 Grand Canyon National Park,2019,36.1069652,-112.1129972,National,No
 Women's Rights National Historical Park,2020,42.910773,-76.800178,National,No
-Golden Gate National Recreation Area,2021,37.8480359,-122.5295263,National,No
+Golden Gate National Recreation Area,2021,37.8480359,-122.5295263,National,Yes
 Lake Mead National Recreation Area,2022,36.1550863,-114.4559303,National,No
 Manhattan Project National Historical Park,2023,35.8808944,-106.3029133,National,No
 Charlestown Navy Yard,2024,42.3733879,-71.0565598,National,Yes
@@ -161,7 +161,7 @@ Castle Clinton National Monument,2021,40.7034401,-74.0168023,North Atlantic,Yes
 Governors Island National Monument,2022,40.6902132,-74.0172006,North Atlantic,No
 Minute Man National Historical Park,2023,42.4543332,-71.3013922,North Atlantic,Yes
 Ellis Island,2024,40.6994352,-74.0415182,North Atlantic,Yes
-African Burial Ground National Monument,2025,40.714538,-74.0044649,North Atlantic,No
+African Burial Ground National Monument,2025,40.714538,-74.0044649,North Atlantic,Yes
 Mount Rainier National Park,1986,46.8799663,-121.7269094,Pacific Northwest & Alaska,No
 Denali National Park and Preserve,1987,63.1148002,-151.1926057,Pacific Northwest & Alaska,No
 Olympic National Park,1988,47.8021067,-123.6043524,Pacific Northwest & Alaska,Yes
@@ -241,7 +241,7 @@ Timpanogos Cave National Monument,2021,40.4405556,-111.7094444,Rocky Mountain,No
 Yellowstone National Park,2022,44.427963,-110.588455,Rocky Mountain,No
 Bryce Canyon National Park,2023,37.5930377,-112.1870895,Rocky Mountain,No
 Grand Teton National Park,2024,43.7904282,-110.6817627,Rocky Mountain,No
-Golden Spike National Historical Park,2025,41.6171911,-112.5507226,Rocky Mountain,No
+Golden Spike National Historical Park,2025,41.6171911,-112.5507226,Rocky Mountain,Yes
 Blue Ridge Parkway Visitor Center,1986,35.5658059,-82.4863211,Southeast,Yes
 Vicksburg National Military Park,1987,32.3548532,-90.8452588,Southeast,No
 Natchez Trace Parkway,1988,34.3299657,-88.7096174,Southeast,No
@@ -263,7 +263,7 @@ Fort Donelson National Battlefield,2003,36.4953082,-87.8569525,Southeast,No
 Big South Fork National River and Recreation Area,2004,36.4709004,-84.6513846,Southeast,No
 Cumberland Gap National Historical Park,2005,36.6274309,-83.6215173,Southeast,No
 Obed National Wild & Scenic River,2006,36.1061527,-84.5984527,Southeast,No
-Fort Pulaski National Monument,2007,32.02706,-80.8904868,Southeast,No
+Fort Pulaski National Monument,2007,32.02706,-80.8904868,Southeast,Yes
 Andrew Johnson National Historic Site,2008,36.1629374,-82.8295391,Southeast,Yes
 Congaree National Park,2009,33.791374,-80.7693275,Southeast,Yes
 Fort Matanzas National Monument,2010,29.7151961,-81.2392182,Southeast,No
@@ -331,7 +331,7 @@ World War II Valor in the Pacific National Monument,1991,21.3648525,-157.9499523
 Cabrillo National Monument,1992,32.6735426,-117.2425191,Western,No
 Redwood National and State Parks,1993,41.2131788,-124.0046275,Western,No
 Organ Pipe Cactus National Monument,1994,32.0877596,-112.9058802,Western,No
-Fort Point National Historic Site,1995,37.8106185,-122.4770527,Western,No
+Fort Point National Historic Site,1995,37.8106185,-122.4770527,Western,Yes
 National Park of American Samoa,1996,-14.2583333,-170.6833333,Western,No
 Pu'uhonua O Hōnaunau National Historical Park,1997,19.4215385,-155.9105253,Western,No
 Point Reyes National Seashore,1998,38.0722847,-122.8817367,Western,No
@@ -355,7 +355,7 @@ Walnut Canyon National Monument,2015,35.207746,-111.517204,Western,No
 Hawaiʻi Volcanoes National Park,2016,19.4193697,-155.2884969,Western,Yes
 Casa Grande Ruins National Monument,2017,32.9954589,-111.5355282,Western,No
 Hubbell Trading Post National Historic Site,2018,35.709401,-109.5584646,Western,No
-San Francisco Maritime National Historical Park,2019,37.807743,-122.42415,Western,No
+San Francisco Maritime National Historical Park,2019,37.807743,-122.42415,Western,Yes
 Rosie the Riveter National Historical Park,2020,37.9097083,-122.3572222,Western,No
 Pu'ukohola Heiau National Historic Site,2021,20.025629,-155.8217773,Western,No
 Great Basin National Park,2022,38.9299798,-114.2633787,Western,No
