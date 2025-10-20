@@ -59,8 +59,9 @@ def load_data():
 df = load_data()
 
 # Load config for region colors
-with open(os.path.join(PROJECT_ROOT, "config", "visit_colors.json"), "r") as f:
-    visit_colors = json.load(f)
+with open(os.path.join(PROJECT_ROOT, "config", "colors.json"), "r") as f:
+    colors = json.load(f)
+    visit_colors = colors["visit"]
 
 ###############################################################################
 # APP #

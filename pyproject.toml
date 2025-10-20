@@ -1,0 +1,51 @@
+[project]
+name = "national-parks"
+version = "0.1.0"
+description = "Visualization tools for national park visits and stamps."
+readme = "README.md"
+requires-python = ">=3.11.4"
+license = { text = "MIT" }
+authors = [
+    { name = "Evan Canfield" }
+]
+
+dependencies = [
+    "streamlit==1.50.0",
+    "siuba==0.4.2",
+    "pandas==2.3.3",
+    "numpy==2.3.4",
+    "folium==0.20.0",
+    "streamlit_folium==0.25.3",
+    "openpyxl==3.1.5"
+]
+
+[project.optional-dependencies]
+dev = [
+    "ruff",      # Linting
+    "black",     # Formatting
+]
+
+[project.scripts]
+app = "streamlit.web.cli:main"
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 88
+extend-select = ["I"]
+fix = true
+
+[tool.black]
+line-length = 88
+target-version = ["py311"]
+
+[tool.uv]
+package = true

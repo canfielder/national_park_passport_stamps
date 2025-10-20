@@ -37,8 +37,9 @@ def load_data():
 df = load_data()
 
 # Load config for region colors
-with open(os.path.join(PROJECT_ROOT, "config", "region_colors.json"), "r") as f:
-    region_colors = json.load(f)
+with open(os.path.join(PROJECT_ROOT, "config", "colors.json"), "r") as f:
+    colors = json.load(f)
+    region_colors = colors["region"]
 
 ###############################################################################
 # APP #
@@ -124,7 +125,7 @@ with tab2:
             'year': lambda x: f"{x:.0f}"  # Remove commas from years (treated as float/int)
         })
     
-    st.dataframe(styled_df, use_container_width=True, )
+    st.dataframe(styled_df, width=True, )
     
     # Allow sorting and filtering
     # edited_df = st.data_editor(sorted_df, num_rows="dynamic")
