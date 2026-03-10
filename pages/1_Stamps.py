@@ -60,8 +60,20 @@ df_filtered = df[
     (df["visited"].isin(visited_filter))
 ]
 
+# Summary metrics (always based on full dataset)
+total = len(df)
+collected = (df["visited"] == "Yes").sum()
+pct = f"{collected / total * 100:.1f}%"
+
+col1, col2, col3 = st.columns(3)
+col1.metric("Total Stamps in Series", total)
+col2.metric("Collected", f"{collected} / {total}")
+col3.metric("Progress", pct)
+
+st.divider()
+
 # Tabs
-tab1, tab2 = st.tabs(["Map View", "Table View"])
+tab1, tab2, tab3 = st.tabs(["Map View", "Table View", "Region Progress"])
 
 with tab1:
     st.header("National Park Passport Stamp Locations")
@@ -125,3 +137,20 @@ with tab2:
         })
 
     st.dataframe(styled_df, width=True, )
+
+with tab3:
+    st.header("Progress by Region")
+
+    region_progress = (
+        df.groupby(["region", "visited"])
+        .size()
+        .unstack(fill_value=0)
+        .rename(columns={"Yes": "Collected", "No": "Not Collected"})
+    )
+    for col in ["Collected", "Not Collected"]:
+        if col not in region_progress.columns:
+            region_progress[col] = 0
+
+    region_progress = region_progress.sort_values("Collected", ascending=False)
+
+    st.bar_chart(region_progress[["Collected", "Not Collected"]])

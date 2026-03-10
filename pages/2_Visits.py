@@ -77,6 +77,20 @@ df_filtered = df[
 
 st.header("National Park Visiting Records")
 
+# Summary metrics (always based on full dataset)
+total = len(df)
+evan = df["Evan"].sum()
+kelsey = df["Kelsey"].sum()
+together = (df["Evan"] & df["Kelsey"]).sum()
+
+col1, col2, col3, col4 = st.columns(4)
+col1.metric("Total Parks", total)
+col2.metric("Evan", evan)
+col3.metric("Kelsey", kelsey)
+col4.metric("Together", together)
+
+st.divider()
+
 # Fallback location (continental US center)
 default_location = [39.8283, -98.5795]
 
