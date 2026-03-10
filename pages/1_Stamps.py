@@ -164,13 +164,20 @@ with tab3:
         tooltip=["region:N", "collected:Q", "total:Q", "pct:Q"]
     )
 
-    text = alt.Chart(region_stats).mark_text(fontWeight="bold").encode(
+    text_inside = alt.Chart(region_stats[region_stats["pct"] >= 10]).mark_text(
+        align="right", dx=-6, fontWeight="bold", color="white"
+    ).encode(
         x=alt.X("pct:Q"),
         y=alt.Y("y_label:N", sort="-x", axis=alt.Axis(labelLimit=300)),
-        text="pct_label:N",
-        align=alt.condition(alt.datum.pct < 10, alt.value("left"), alt.value("right")),
-        dx=alt.condition(alt.datum.pct < 10, alt.value(5), alt.value(-6)),
-        color=alt.condition(alt.datum.pct < 10, alt.value("gray"), alt.value("white"))
+        text="pct_label:N"
     )
 
-    st.altair_chart((bars + text).properties(height=400), use_container_width=True)
+    text_outside = alt.Chart(region_stats[region_stats["pct"] < 10]).mark_text(
+        align="left", dx=5, fontWeight="bold", color="gray"
+    ).encode(
+        x=alt.X("pct:Q"),
+        y=alt.Y("y_label:N", sort="-x", axis=alt.Axis(labelLimit=300)),
+        text="pct_label:N"
+    )
+
+    st.altair_chart((bars + text_inside + text_outside).properties(height=400), use_container_width=True)
