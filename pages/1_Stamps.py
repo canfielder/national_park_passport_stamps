@@ -151,18 +151,23 @@ with tab3:
         .reset_index()
     )
     region_stats["pct"] = (region_stats["collected"] / region_stats["total"] * 100).round(1)
-    region_stats["label"] = region_stats["total"].astype(str) + " stamps"
+    region_stats["pct_label"] = region_stats["pct"].astype(str) + "%"
+    region_stats["y_label"] = (
+        region_stats["region"] + " ("
+        + region_stats["collected"].astype(str) + "/"
+        + region_stats["total"].astype(str) + ")"
+    )
 
     bars = alt.Chart(region_stats).mark_bar().encode(
         x=alt.X("pct:Q", title="% Collected", scale=alt.Scale(domain=[0, 100])),
-        y=alt.Y("region:N", sort="-x", title=None),
+        y=alt.Y("y_label:N", sort="-x", title=None),
         tooltip=["region:N", "collected:Q", "total:Q", "pct:Q"]
     )
 
     text = alt.Chart(region_stats).mark_text(align="left", dx=5, color="gray").encode(
         x=alt.X("pct:Q"),
-        y=alt.Y("region:N", sort="-x"),
-        text="label:N"
+        y=alt.Y("y_label:N", sort="-x"),
+        text="pct_label:N"
     )
 
     st.altair_chart((bars + text).properties(height=300), use_container_width=True)
