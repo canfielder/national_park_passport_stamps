@@ -10,9 +10,7 @@ import pathlib as pl
 import streamlit as st
 
 from streamlit_folium import st_folium
-
-# PROJECT_ROOT = find_project_root()
-PROJECT_ROOT = "/Users/evancanfield/Documents/Projects/national_park_passport_stamps"
+from src.paths import PROJECT_ROOT
 
 st.set_page_config(
     page_title = "National Park Visiting",
@@ -33,7 +31,7 @@ def park_status(row):
         output = 'Kelsey'
     else:
         output = 'Not Visited'
-    
+
     return output
 
 
@@ -88,7 +86,7 @@ if df_filtered.empty:
 else:
     # Safe calculation of mean coordinates
     map_center = [
-        df_filtered["latitude"].mean(), 
+        df_filtered["latitude"].mean(),
         df_filtered["longitude"].mean()
     ]
 
@@ -104,9 +102,9 @@ for _, row in df_filtered.iterrows():
         popup = msg,
         tooltip = msg,
         icon = plugins.BeautifyIcon(
-            icon = "star", 
-            icon_shape = "marker", 
-            border_color = color, 
+            icon = "star",
+            icon_shape = "marker",
+            border_color = color,
             background_color = color
         )
     ).add_to(m)

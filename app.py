@@ -10,9 +10,7 @@ import pathlib as pl
 import streamlit as st
 
 from streamlit_folium import st_folium
-
-# PROJECT_ROOT = find_project_root()
-PROJECT_ROOT = "/Users/evancanfield/Documents/Projects/national_park_passport_stamps"
+from src.paths import PROJECT_ROOT
 
 st.set_page_config(
     page_title = "National Parks",

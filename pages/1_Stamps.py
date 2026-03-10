@@ -10,8 +10,7 @@ import pathlib as pl
 import streamlit as st
 import streamlit_folium as stf
 
-# PROJECT_ROOT = find_project_root()
-PROJECT_ROOT = "/Users/evancanfield/Documents/Projects/national_park_passport_stamps"
+from src.paths import PROJECT_ROOT
 
 st.set_page_config(
     page_title = "National Parks Passport Stamps",
@@ -76,13 +75,13 @@ with tab1:
     else:
         # Safe calculation of mean coordinates
         map_center = [
-            df_filtered["latitude"].mean(), 
+            df_filtered["latitude"].mean(),
             df_filtered["longitude"].mean()
         ]
-    
+
     # Create map
     m = folium.Map(location=map_center, zoom_start=5)
-    
+
     for _, row in df_filtered.iterrows():
         color = region_colors.get(row["region"], "blue")
         msg = f"{row['name']} ({row['year']})"
@@ -98,13 +97,13 @@ with tab1:
             popup = msg,
             tooltip = msg,
             icon = plugins.BeautifyIcon(
-                icon = icon, 
-                icon_shape = "marker", 
-                border_color = color, 
+                icon = icon,
+                icon_shape = "marker",
+                border_color = color,
                 background_color = color
             )
         ).add_to(m)
-    
+
     plugins.Fullscreen(position="topleft").add_to(m)
     stf.st_folium(
         m,
@@ -124,8 +123,5 @@ with tab2:
     styled_df = sorted_df.style.format({
             'year': lambda x: f"{x:.0f}"  # Remove commas from years (treated as float/int)
         })
-    
+
     st.dataframe(styled_df, width=True, )
-    
-    # Allow sorting and filtering
-    # edited_df = st.data_editor(sorted_df, num_rows="dynamic")
