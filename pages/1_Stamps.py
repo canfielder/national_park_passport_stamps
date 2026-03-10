@@ -158,18 +158,19 @@ with tab3:
         + region_stats["total"].astype(str) + ")"
     )
 
-    bars = alt.Chart(region_stats).mark_bar(size=30).encode(
+    bars = alt.Chart(region_stats).mark_bar(size=25).encode(
         x=alt.X("pct:Q", title="% Collected", scale=alt.Scale(domain=[0, 100])),
         y=alt.Y("y_label:N", sort="-x", title=None, axis=alt.Axis(labelLimit=300)),
         tooltip=["region:N", "collected:Q", "total:Q", "pct:Q"]
     )
 
-    text = alt.Chart(region_stats).mark_text(
-        align="right", dx=-6, fontWeight="bold", color="white"
-    ).encode(
+    text = alt.Chart(region_stats).mark_text(fontWeight="bold").encode(
         x=alt.X("pct:Q"),
         y=alt.Y("y_label:N", sort="-x", axis=alt.Axis(labelLimit=300)),
-        text="pct_label:N"
+        text="pct_label:N",
+        align=alt.condition(alt.datum.pct < 10, alt.value("left"), alt.value("right")),
+        dx=alt.condition(alt.datum.pct < 10, alt.value(5), alt.value(-6)),
+        color=alt.condition(alt.datum.pct < 10, alt.value("gray"), alt.value("white"))
     )
 
-    st.altair_chart((bars + text).properties(height=300), use_container_width=True)
+    st.altair_chart((bars + text).properties(height=400), use_container_width=True)
