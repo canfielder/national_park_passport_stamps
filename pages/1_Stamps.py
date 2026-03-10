@@ -136,7 +136,7 @@ with tab2:
             'year': lambda x: f"{x:.0f}"  # Remove commas from years (treated as float/int)
         })
 
-    st.dataframe(styled_df, width=True, )
+    st.dataframe(styled_df, use_container_width=True)
 
 with tab3:
     st.header("Progress by Region")
@@ -153,4 +153,4 @@ with tab3:
 
     region_progress = region_progress.sort_values("Collected", ascending=False)
 
-    st.bar_chart(region_progress[["Collected", "Not Collected"]])
+    st.bar_chart(region_progress[["Collected", "Not Collected"]], horizontal=True)
