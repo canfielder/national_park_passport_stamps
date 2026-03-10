@@ -160,13 +160,13 @@ with tab3:
 
     bars = alt.Chart(region_stats).mark_bar().encode(
         x=alt.X("pct:Q", title="% Collected", scale=alt.Scale(domain=[0, 100])),
-        y=alt.Y("y_label:N", sort="-x", title=None),
+        y=alt.Y("y_label:N", sort="-x", title=None, axis=alt.Axis(labelLimit=300)),
         tooltip=["region:N", "collected:Q", "total:Q", "pct:Q"]
     )
 
     text = alt.Chart(region_stats).mark_text(align="left", dx=5, color="gray").encode(
         x=alt.X("pct:Q"),
-        y=alt.Y("y_label:N", sort="-x"),
+        y=alt.Y("y_label:N", sort="-x", axis=alt.Axis(labelLimit=300)),
         text="pct_label:N"
     )
 
