@@ -1,6 +1,7 @@
 ###############################################################################
 # SETUP #
 
+import altair as alt
 import folium
 import folium.plugins as plugins
 import json
@@ -141,16 +142,27 @@ with tab2:
 with tab3:
     st.header("Progress by Region")
 
-    region_progress = (
-        df.groupby(["region", "visited"])
-        .size()
-        .unstack(fill_value=0)
-        .rename(columns={"Yes": "Collected", "No": "Not Collected"})
+    region_stats = (
+        df.groupby("region")
+        .agg(
+            total=("visited", "count"),
+            collected=("visited", lambda x: (x == "Yes").sum())
+        )
+        .reset_index()
     )
-    for col in ["Collected", "Not Collected"]:
-        if col not in region_progress.columns:
-            region_progress[col] = 0
+    region_stats["pct"] = (region_stats["collected"] / region_stats["total"] * 100).round(1)
+    region_stats["label"] = region_stats["total"].astype(str) + " stamps"
 
-    region_progress = region_progress.sort_values("Collected", ascending=False)
+    bars = alt.Chart(region_stats).mark_bar().encode(
+        x=alt.X("pct:Q", title="% Collected", scale=alt.Scale(domain=[0, 100])),
+        y=alt.Y("region:N", sort="-x", title=None),
+        tooltip=["region:N", "collected:Q", "total:Q", "pct:Q"]
+    )
 
-    st.bar_chart(region_progress[["Collected", "Not Collected"]], horizontal=True)
+    text = alt.Chart(region_stats).mark_text(align="left", dx=5, color="gray").encode(
+        x=alt.X("pct:Q"),
+        y=alt.Y("region:N", sort="-x"),
+        text="label:N"
+    )
+
+    st.altair_chart((bars + text).properties(height=300), use_container_width=True)
