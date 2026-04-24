@@ -252,10 +252,10 @@ Castillo de San Marcos,1992,29.8978618,-81.3115187,Southeast,No
 Wright Brothers National Memorial,1993,36.0143027,-75.667856,Southeast,No
 Carl Sandburg Home,1994,35.2714404,-82.4471894,Southeast,Yes
 Andersonville National Historic Site,1995,32.2002948,-84.1303207,Southeast,No
-Gulf Islands National Seashore,1996,30.3918514,-88.791067,Southeast,No
+Gulf Islands National Seashore,1996,30.3487484,-87.29810157,Southeast,No
 Dry Tortugas National Park,1997,24.628477,-82.8731874,Southeast,No
 Fort Sumter National Monument,1998,32.7523476,-79.8746925,Southeast,No
-Cumberland Island National Seashore,1999,30.7206514,-81.5502114,Southeast,No
+Cumberland Island National Seashore,1999,30.7206514,-81.5502114,Southeast,Yes
 Canaveral National Seashore,2000,28.789536,-80.7563754,Southeast,No
 Moores Creek National Battlefield,2001,34.4577897,-78.109585,Southeast,Yes
 Stones River National Battlefield,2002,35.8731131,-86.43469,Southeast,No
@@ -267,7 +267,7 @@ Fort Pulaski National Monument,2007,32.02706,-80.8904868,Southeast,Yes
 Andrew Johnson National Historic Site,2008,36.1629374,-82.8295391,Southeast,Yes
 Congaree National Park,2009,33.791374,-80.7693275,Southeast,Yes
 Fort Matanzas National Monument,2010,29.7151961,-81.2392182,Southeast,No
-Fort Frederica National Monument,2011,31.223111,-81.389279,Southeast,No
+Fort Frederica National Monument,2011,31.223111,-81.389279,Southeast,Yes
 Natchez National Historical Park,2012,31.559982,-91.405937,Southeast,No
 DeSoto National Memorial,2013,27.5216976,-82.6434516,Southeast,No
 Horseshoe Bend National Military Park,2014,32.9783223,-85.7310076,Southeast,No
@@ -284,13 +284,13 @@ Tuskegee Airmen National Historic Site,2024,32.4572257,-85.6801071,Southeast,No
 Christiansted National Historic Site,2025,17.7467366,-64.7023078,Southeast,No
 Big Bend National Park,1986,29.1274869,-103.2425379,Southwest,No
 White Sands National Monument,1987,32.7872403,-106.3256816,Southwest,No
-San Antonio Missions National Historical Park,1988,29.361157,-98.478431,Southwest,No
+San Antonio Missions National Historical Park,1988,29.361157,-98.478431,Southwest,Yes
 Hot Springs National Park,1989,34.5216915,-93.0423545,Southwest,Yes
 Pecos National Historical Park,1990,35.5502861,-105.6878211,Southwest,No
 Bandelier National Monument,1991,35.7646658,-106.3228338,Southwest,No
 Gran Quivira Visitor Center,1992,34.2595807,-106.0932504,Southwest,No
 Arkansas Post National Memorial,1993,34.0210974,-91.3478851,Southwest,No
-Lyndon B. Johnson State Park & Historic Site,1994,30.2373905,-98.6292057,Southwest,No
+Lyndon B. Johnson State Park & Historic Site,1994,30.2373905,-98.6292057,Southwest,Yes
 Carlsbad Caverns National Park,1995,32.1478553,-104.5567138,Southwest,No
 El Morro National Monument,1996,35.0396358,-108.3450813,Southwest,No
 Guadalupe Mountains National Park,1997,31.94519,-104.8725221,Southwest,No
@@ -362,3 +362,11 @@ Great Basin National Park,2022,38.9299798,-114.2633787,Western,No
 Pipe Spring National Monument,2023,36.8625334,-112.7374633,Western,No
 Wupatki National Monument,2024,35.5599835,-111.3935271,Western,No
 John Muir National Historic Site,2025,37.9921664,-122.1310682,Western,No
+Blackstone River Valley National Historical Park,2026,41.8776658,-71.38237139,North Atlantic,No
+"Arlington House, The Robert R. Lee Memorial",2026,38.88130925,-77.07236954,Mid-Atlantic,No
+Big Cypress National Preserve,2026,26.04859152,-81.07509019,Southeast,Yes
+Ste. Genevieve National Historic Park,2026,37.97940908,-90.04228702,Midwest,No
+Blackwell School National Historic Site,2026,30.30589326,-104.0211819,Southwest,No
+Glacier National Park,2026,48.7596128,-113.7870225,Rocky Mountain,No
+Tuzigoot National Monument,2026,34.76856029,-112.0261405,Western,No
+Crater Lake National Park,2026,42.8684411,-122.1684785,Pacific Northwest & Alaska,No
