@@ -46,17 +46,17 @@ with open(os.path.join(PROJECT_ROOT, "config", "colors.json"), "r") as f:
 
 # Sidebar filters
 st.sidebar.header("Filter Stamps")
-years = sorted(df["year"].dropna().unique())
 regions = sorted(df["region"].dropna().unique())
 visited_options = ["Yes", "No"]
+year_min, year_max = int(df["year"].min()), int(df["year"].max())
 
 visited_filter = st.sidebar.multiselect("Visited", visited_options, default=visited_options)
 region_filter = st.sidebar.multiselect("Select Region", regions, default=regions)
-year_filter = st.sidebar.multiselect("Select Year", years, default=years)
+year_filter = st.sidebar.slider("Year Range", year_min, year_max, (year_min, year_max))
 
 # Apply filters
 df_filtered = df[
-    (df["year"].isin(year_filter)) &
+    (df["year"].between(year_filter[0], year_filter[1])) &
     (df["region"].isin(region_filter)) &
     (df["visited"].isin(visited_filter))
 ]
@@ -120,9 +120,9 @@ with tab1:
     plugins.Fullscreen(position="topleft").add_to(m)
     stf.st_folium(
         m,
-        height = 750,
-        width = 1000,
-        returned_objects = []
+        height=750,
+        use_container_width=True,
+        returned_objects=[]
     )
 
 
@@ -137,7 +137,7 @@ with tab2:
             'year': lambda x: f"{x:.0f}"  # Remove commas from years (treated as float/int)
         })
 
-    st.dataframe(styled_df, use_container_width=True)
+    st.dataframe(styled_df, use_container_width=True, hide_index=True)
 
 with tab3:
     st.header("Progress by Region")
@@ -161,6 +161,14 @@ with tab3:
     bars = alt.Chart(region_stats).mark_bar(size=25).encode(
         x=alt.X("pct:Q", title="% Collected", scale=alt.Scale(domain=[0, 100])),
         y=alt.Y("y_label:N", sort="-x", title=None, axis=alt.Axis(labelLimit=300)),
+        color=alt.Color(
+            "region:N",
+            scale=alt.Scale(
+                domain=list(region_colors.keys()),
+                range=list(region_colors.values()),
+            ),
+            legend=None,
+        ),
         tooltip=["region:N", "collected:Q", "total:Q", "pct:Q"]
     )
 

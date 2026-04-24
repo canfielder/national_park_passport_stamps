@@ -65,7 +65,7 @@ with open(os.path.join(PROJECT_ROOT, "config", "colors.json"), "r") as f:
 # APP #
 
 # Sidebar filters
-st.sidebar.header("Filter Visit")
+st.sidebar.header("Filter Visits")
 status = sorted(df["status"].dropna().unique())
 
 status_filter = st.sidebar.multiselect("Select Status", status, default=status)
