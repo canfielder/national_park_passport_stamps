@@ -171,3 +171,8 @@ cython_debug/
 .pypirc
 
 .DS_Store
+
+# Project-specific
+_scratch/
+logs/
+data/trips/*/itinerary.html

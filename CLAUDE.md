@@ -33,6 +33,10 @@ data/
   raw/                     # KML/KMZ exports from Google Maps
   processed/               # Archived processed data
 notebooks/                 # One-time data pipeline notebooks (KML → CSV)
+scripts/
+  generate_itinerary.py   # Trip itinerary generator (see below)
+data/
+  trips/                  # One subfolder per trip, each containing parkstamps.org HTML files
 ```
 
 ### Data Pipeline
@@ -50,6 +54,16 @@ Raw data originates as **KML/KMZ exports from Google Maps**. The Jupyter noteboo
 - **Colors:** All region and visitor color mappings live in `config/colors.json`. Read it once at load time rather than hardcoding hex values inline.
 - **Maps:** Folium + streamlit-folium. Markers use icon classes (`fa-check`, `fa-close`, `fa-star`) colored by region/visitor status from the color config.
 - **Charts:** Altair (not plotnine) is used here — this project predates the global plotnine preference. Keep charts in Altair unless doing a full rewrite.
+
+### Itinerary Generator
+
+`scripts/generate_itinerary.py` is a standalone CLI tool for trip planning around NPS cancellation stamps (distinct from the passport stamp series). The user saves printer-friendly pages from [parkstamps.org](https://www.parkstamps.org) (`searchPrint.php?locationId=XXXX`) as HTML files using SingleFile or "Save Page As", places them in a trip subfolder under `data/trips/`, and runs:
+
+```bash
+uv run python -m scripts.generate_itinerary data/trips/<trip-folder>
+```
+
+Output is `data/trips/<trip-folder>/itinerary.html` — a mobile-friendly single-page HTML file. It cross-references the passport series CSV to flag uncollected series stamps within 25 km of each cancellation location. Collection status is detected by looking for the username `CanfieldER` in the HTML.
 
 ### Deployment
 
