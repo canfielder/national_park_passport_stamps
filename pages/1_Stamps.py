@@ -32,6 +32,10 @@ def load_data():
     )
     df = pd.read_csv(table_path)
 
+    # Most stamps predate date tracking, so blanks are expected — keep them as
+    # empty strings rather than NaN so the table view renders them cleanly.
+    df["date_visited"] = df["date_visited"].fillna("").astype(str)
+
     return df
 
 df = load_data()

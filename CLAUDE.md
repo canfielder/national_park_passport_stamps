@@ -43,7 +43,7 @@ data/
 
 Raw data originates as **KML/KMZ exports from Google Maps**. The Jupyter notebooks in `notebooks/` document the one-time transformation into the manual tracking CSVs. The Streamlit app reads only from `data/manual_tracking/`.
 
-**Stamps CSV** (`national_park_passport_stamp_series.csv`): `name`, `year`, `latitude`, `longitude`, `region`, `visited` (Yes/No).
+**Stamps CSV** (`national_park_passport_stamp_series.csv`): `name`, `year`, `latitude`, `longitude`, `region`, `visited` (Yes/No), `date_visited` (ISO `YYYY-MM-DD`, blank when unknown — most pre-existing visits have no recorded date).
 
 **Visits CSV** (`national_park_visited_records.csv`): `name`, `latitude`, `longitude`, `split`, `Kelsey` (bool), `Evan` (bool). The app derives a display status — "Evan", "Kelsey", "Evan And Kelsey", or "Not Visited" — at load time.
 
