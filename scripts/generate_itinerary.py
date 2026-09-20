@@ -12,6 +12,7 @@ import logging
 import math
 import re
 import sys
+import urllib.parse
 from dataclasses import dataclass, field
 from datetime import date
 from pathlib import Path
@@ -413,7 +414,13 @@ def _render_location(
     ]
 
     if loc.address:
-        maps_url = f"https://maps.google.com/?q={loc.gps[0]},{loc.gps[1]}"
+        # GPS is (0.0, 0.0) when the page had no parseable coordinates — linking
+        # that would point at Null Island, so fall back to the address text.
+        if loc.gps == (0.0, 0.0):
+            query = urllib.parse.quote(loc.address)
+        else:
+            query = f"{loc.gps[0]},{loc.gps[1]}"
+        maps_url = f"https://maps.google.com/?q={query}"
         parts.append(f'    <div>📍 <a href="{maps_url}">{esc(loc.address)}</a></div>')
     if loc.hours:
         parts.append(f"    <div>🕐 {esc(loc.hours)}</div>")
