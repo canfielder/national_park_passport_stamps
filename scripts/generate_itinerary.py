@@ -228,28 +228,42 @@ def find_nearby_series_stamps(
 
     Returns:
         List of nearby uncollected series stamp dicts, sorted by distance.
+        At most one entry per park — a park issued a stamp in several
+        series years would otherwise be listed once per year.
     """
     if location.gps == (0.0, 0.0):
         return []
 
     lat, lon = location.gps
-    nearby = []
+
+    # Keyed by park name so repeat series years collapse into one entry.
+    nearby: dict[str, dict] = {}
 
     for _, row in df_series.iterrows():
         if row["visited"] == "Yes":
             continue
         dist = _haversine_km(lat, lon, float(row["latitude"]), float(row["longitude"]))
-        if dist <= threshold_km:
-            nearby.append(
-                {
-                    "name": row["name"],
-                    "year": int(row["year"]),
-                    "region": row["region"],
-                    "distance_km": round(dist, 1),
-                }
-            )
+        if dist > threshold_km:
+            continue
 
-    return sorted(nearby, key=lambda x: x["distance_km"])
+        name = row["name"]
+        candidate = {
+            "name": name,
+            "year": int(row["year"]),
+            "region": row["region"],
+            "distance_km": round(dist, 1),
+        }
+
+        # Keep the closest entry; on a tie (same park, same coords) the
+        # earliest series year wins.
+        existing = nearby.get(name)
+        if existing is None or (candidate["distance_km"], candidate["year"]) < (
+            existing["distance_km"],
+            existing["year"],
+        ):
+            nearby[name] = candidate
+
+    return sorted(nearby.values(), key=lambda x: x["distance_km"])
 
 
 # ── Cross-location stamp index ────────────────────────────────────────────────
