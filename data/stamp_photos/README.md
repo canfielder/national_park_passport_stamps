@@ -102,8 +102,9 @@ Then:
 
 1. Fill in `stamp_id` for each row (the NPTC stamp Id). Use `none` for photos
    that aren't a single stamp to log (full-page shots, duplicates), with the
-   reason in `notes`. Retired stamps aren't in the master map export, so their
-   IDs have to come from parkstamps.org. Use `personal` for a stamp logged on
+   reason in `notes`. Retired stamps are in the master map export with a
+   Retired status (exports before 2026-09-27 left them out; use
+   parkstamps.org for those). Use `personal` for a stamp logged on
    NPTC as a personal stamp, which has no stamp id (e.g. Virginia state
    parks): type its `stamp_text` and `location_name` by hand.
 2. If a photo shows several stamps, duplicate its row — one row per stamp.
@@ -147,8 +148,8 @@ Then:
    stations and you don't know which one mailed it, leave `location_id`
    blank and set `location_source` to `manual`.
 7. `retired` is set by the script on every run (don't edit it): `Yes` when
-   the stamp id isn't in the current master map, which lists only active
-   stamps. Retired stamps get their id from parkstamps.org and their
-   `stamp_text` typed by hand.
+   the stamp has no Active listing in the latest master map export. The
+   export includes retired stamps with their text, so `stamp_text` fills in
+   for them too; type it by hand only if it's still blank.
 8. Re-run the script: it fills `stamp_text` and open locations from the
    latest NPTC master map export in `data/raw/nptc/`.
