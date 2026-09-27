@@ -176,3 +176,9 @@ cython_debug/
 _scratch/
 logs/
 data/trips/*/itinerary.html
+# Stamp photos: keep images local (EXIF holds GPS), commit only the README
+data/stamp_photos/*
+!data/stamp_photos/README.md
+
+# NPTC master map exports (~20 MB each)
+data/raw/nptc/

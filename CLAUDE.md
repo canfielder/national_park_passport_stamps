@@ -65,6 +65,12 @@ uv run python -m scripts.generate_itinerary data/trips/<trip-folder>
 
 Output is `data/trips/<trip-folder>/itinerary.html` — a mobile-friendly single-page HTML file. It cross-references the passport series CSV to flag uncollected series stamps within 25 km of each cancellation location. Collection status is detected by looking for the username `CanfieldER` in the HTML.
 
+### NPTC Master Map & Stamp Photo Log
+
+`src/nptc_map.py` parses the NPTC master map KML export (`NPTCMasterMap_MM-DD-YYYY.kml`, ~20 MB, gitignored under `data/raw/nptc/`). It is the preferred source for collected status: each stamp carries a collected checkmark, but there are no collection dates.
+
+`scripts/log_stamp_photos.py` logs photos in `data/stamp_photos/` (images gitignored; EXIF holds GPS) to `data/manual_tracking/cancellation_stamp_log.csv`, one row per stamp. Dates come from the file name, then from EXIF only if it falls within the trip folder's date range, then from the trip start. Photo GPS is ignored on purpose, because stamps are photographed at the hotel or at home. `scripts/sync_photo_names.py` renames photos to the naming convention (`YYYYMMDD__<location_id>__<stamp_id>` in `YYYYMMDD[-YYYYMMDD]_trip-name/` folders) from the log, which is the source of truth. `data/stamp_photos/` is the folder of record. See `data/stamp_photos/README.md`.
+
 ### Deployment
 
 Deployed on **Streamlit Cloud**. `runtime.txt` pins the Python version; `requirements.txt` is exported from `pyproject.toml` via `make requirements` and committed for the cloud runner.

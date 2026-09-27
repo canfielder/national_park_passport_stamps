@@ -24,6 +24,8 @@ dependencies = [
 dev = [
     "ruff",      # Linting
     "black",     # Formatting
+    "pillow",    # Photo EXIF (scripts/log_stamp_photos.py)
+    "pillow-heif",  # HEIC support for iPhone photos
 ]
 
 [project.scripts]
